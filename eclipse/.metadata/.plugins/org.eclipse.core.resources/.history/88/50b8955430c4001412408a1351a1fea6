@@ -1,0 +1,7 @@
+package com.connor.additionalrecipies;
+
+public final class Blocks {
+	public final void init(){
+	
+		}
+	}

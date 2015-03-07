@@ -1,0 +1,7 @@
+package com.connor.additionalrecipies.lib;
+
+public class Constants {
+	public static final String MODID = "additionalrecipies";
+    public static final String MODNAME = "Additional Recipies";
+    public static final String VERSION = "Alpha 0.1";
+}

@@ -1,0 +1,11 @@
+package com.connor.additionalrecipies.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+public class OrangeBlock extends Block{
+
+	public OrangeBlock(){
+
+        super(Material.rock);
+    }
+
+}

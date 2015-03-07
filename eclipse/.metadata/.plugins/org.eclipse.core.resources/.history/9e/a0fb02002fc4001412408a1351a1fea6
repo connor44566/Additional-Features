@@ -1,0 +1,5 @@
+package com.connor.additionalrecipies;
+import com.connor.additionalrecipies.lib.Constants;
+public class Main {
+	@Mod(modid = Constants.MODID, name = "", version = "")
+}

@@ -1,0 +1,46 @@
+package com.connor.additionalrecipies.Blocks;
+import com.connor.additionalrecipies.Main;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.ITileEntityProvider;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+import com.connor.additionalrecipies.lib.Constants;
+import com.connor.additionalrecipies.tileentities.TileEntitySmasher;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class Smasher extends Block implements ITileEntityProvider{
+
+    private String name = "smasher";
+
+    public Smasher() {
+
+        super(Material.rock);
+        setBlockName(Constants.MODID + "." + name);
+        setCreativeTab(CreativeTabs.tabBlock);
+        GameRegistry.registerBlock(this, name);
+    }
+    public TileEntity createNewTileEntity(World world, int meta) {
+        return new TileEntitySmasher();
+    }
+
+    @Override
+    public boolean hasTileEntity(int metadata) {
+
+        return true;
+    }
+    @Override
+    public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int meta, float hitX, float hitY, float hitZ) {
+        if(world.isRemote) {
+            if (world.getTileEntity(x, y, z) != null)
+                player.openGui(Main.instance, GUIs.FURNACE.ordinal(), world, x, y, z);
+            return true;
+        }
+        return true;
+    }
+}

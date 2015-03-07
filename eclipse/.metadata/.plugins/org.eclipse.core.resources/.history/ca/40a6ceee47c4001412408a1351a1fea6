@@ -1,0 +1,23 @@
+package com.connor.additionalrecipies.Blocks;
+
+import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
+
+public class GuiFurnace extends GuiScreen {
+	private int x, y, z;
+    private EntityPlayer player;
+    private World world;
+    private int xSize, ySize;
+    
+    public GuiScreen(EntityPlayer player, World world, int x, int y, int z) {
+
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.player = player;
+        this.world = world;
+        xSize = 176;
+        ySize = 214;
+    }
+}

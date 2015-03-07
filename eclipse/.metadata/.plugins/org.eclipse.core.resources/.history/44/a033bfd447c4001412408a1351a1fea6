@@ -1,0 +1,7 @@
+package com.connor.additionalrecipies.Blocks;
+
+import net.minecraft.client.gui.GuiScreen;
+
+public class GuiFurnace extends GuiScreen {
+
+}

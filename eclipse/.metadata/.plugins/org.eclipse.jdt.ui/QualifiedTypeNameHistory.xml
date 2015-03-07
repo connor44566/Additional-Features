@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="com.sun.prism.Material"/>
+<fullyQualifiedTypeName name="com.connor.additionalrecipies.tileentities.TileEntitySmasher"/>
+<fullyQualifiedTypeName name="com.connor.additionalrecipies.Main"/>
+<fullyQualifiedTypeName name="com.connor.additionalrecipies.Blocks.GuiSmasher"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="com.connor.additionalrecipies.lib.Constants"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemFood"/>
+</qualifiedTypeNameHistroy>

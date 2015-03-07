@@ -1,0 +1,14 @@
+package com.connor.additionalrecipies.tileentities;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntitySmasher extends TileEntity {
+    public static final String publicName = "tileEntitySmasher";
+    private String name = "tileEntitySmasher";
+
+    public String getName() {
+
+        return name;
+    }
+
+}

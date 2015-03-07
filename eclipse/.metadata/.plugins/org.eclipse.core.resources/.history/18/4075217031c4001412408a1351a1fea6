@@ -1,0 +1,15 @@
+package com.connor.additionalrecipies.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+import com.connor.additionalrecipies.lib.Constants;
+public class OrangeBlock extends Block{
+	private String name = "orangeBlock";
+
+	public OrangeBlock(){
+
+        super(Material.rock);
+        this.setBlockName(Constants.MODID + "_" + name);
+    }
+
+}

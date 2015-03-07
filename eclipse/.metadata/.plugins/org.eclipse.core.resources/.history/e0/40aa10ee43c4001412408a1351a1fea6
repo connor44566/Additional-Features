@@ -1,0 +1,21 @@
+package com.connor.additionalrecipies;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+import com.connor.additionalrecipies.lib.Constants;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ItemOrangeFood extends ItemFood {
+
+	private String name = "orangefood";
+	
+	public ItemOrangeFood() {
+		
+		setUnlocalizedName(Constants.MODID + "." + name);
+		setTextureName(Constants.MODID + ":" + name);
+		setCreativeTab(CreativeTabs.tabFood);
+		GameRegistry.registerItem(this, name);
+	}
+}

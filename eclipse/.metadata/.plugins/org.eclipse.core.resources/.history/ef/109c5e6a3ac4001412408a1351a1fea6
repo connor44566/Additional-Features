@@ -1,0 +1,20 @@
+package com.connor.additionalrecipies.Blocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+
+import com.connor.additionalrecipies.lib.Constants;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+public class OrangeBlock extends Block{
+	private String name = "orangeBlock";
+
+	public OrangeBlock(){
+
+        super(Material.rock);
+        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setBlockName(Constants.MODID + "." + name);
+        GameRegistry.registerBlock(this, name);
+    }
+
+}

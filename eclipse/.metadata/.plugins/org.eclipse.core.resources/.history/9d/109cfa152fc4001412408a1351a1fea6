@@ -1,0 +1,6 @@
+package com.connor.additionalrecipies;
+import com.connor.additionalrecipies.lib.*;
+import net.minecraftforge.*;
+public class Main {
+	@Mod(modid = Constants.MODID, name = Constants.MODNAME, version = Constants.Version)
+}

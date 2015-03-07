@@ -1,0 +1,7 @@
+package com.connor.additionalrecipies;
+
+import net.minecraft.item.Item;
+
+public class ItemOrangeFood extends Item {
+
+}

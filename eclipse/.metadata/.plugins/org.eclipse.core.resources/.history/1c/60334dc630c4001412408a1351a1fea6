@@ -1,0 +1,10 @@
+package com.connor.additionalrecipies;
+
+import net.minecraft.block.Block;
+
+public final class Blocks {
+	public static Block orangeblock;
+	public static void init(){
+		orangeBlock = new OrangeBlock();
+		}
+	}
